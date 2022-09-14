@@ -68,7 +68,6 @@ for (let i = 0; i < wordsInParagraph.length; i++) {
 console.log(`words = ${words}`);
 console.log(`et numbers = ${etNumbers}`);
 
-
 let phraseToCheck = "put it up";
 
 function palidromeCheck(wordToCheck) {
@@ -78,18 +77,15 @@ function palidromeCheck(wordToCheck) {
   while (index < length) {
     if (wordToCheck[index] === " ") {
       index++;
-    }
-    else if (wordToCheck[length] === " ") {
+    } else if (wordToCheck[length] === " ") {
       length--;
-    }
-    else if (wordToCheck[index] === wordToCheck[length]) {
+    } else if (wordToCheck[index] === wordToCheck[length]) {
       index++;
       length--;
-    }
-    else {
+    } else {
       return false;
     }
     return true;
+  }
 }
-
 console.log(palidromeCheck(phraseToCheck));
